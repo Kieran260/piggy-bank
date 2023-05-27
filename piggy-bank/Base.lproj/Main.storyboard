@@ -1,32 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fn9-bp-COv">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Wallet-->
+        <scene sceneID="xly-Hk-3Bp">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="piggy_bank" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController title="Wallet" id="pWR-OW-LPV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5h2-g4-rc7">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="MuG-bG-Z9t"/>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.14509803921568626" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Wallet" id="gbv-as-13S"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j23-PD-FTd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="396" y="-20"/>
+            <point key="canvasLocation" x="-1332" y="189"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="XJD-Wg-EG1">
+            <objects>
+                <viewController title="Home" id="AVi-Yw-rRN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aMy-ty-Fq4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="oRf-5S-agK"/>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.14509803921568626" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="p3j-sN-sxB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UCT-Gd-iOV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2158" y="189"/>
+        </scene>
+        <!--Payments-->
+        <scene sceneID="xPo-OM-XjF">
+            <objects>
+                <viewController title="Payments" id="DK5-J9-yBo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CWQ-Fq-Oxu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cAJ-Je-8Gy"/>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.14509803921568626" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Payments" id="2c9-VY-asm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h2D-fA-mOO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-535" y="189"/>
+        </scene>
+        <!--Analytics-->
+        <scene sceneID="f1N-y7-vAi">
+            <objects>
+                <viewController title="Analytics" id="aSg-pO-BYj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Y2-HE-hhs">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="JIc-UZ-OOw"/>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.14509803921568626" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Analytics" id="0cO-0z-6PC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FhF-AQ-wAp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="237" y="189"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="So9-GA-K4o">
+            <objects>
+                <viewController title="Account" id="DOr-hT-bPz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Thf-yT-MMY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Y00-PA-biA"/>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.14509803921568626" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Account" id="8IG-B2-SmP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GxC-P8-yKk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="999" y="189"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ObJ-xT-Zht">
+            <objects>
+                <tabBarController id="fn9-bp-COv" customClass="TabBarController" customModule="piggy_bank" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3mx-pp-bCH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.14509803921568626" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="AVi-Yw-rRN" kind="relationship" relationship="viewControllers" id="k9R-UU-BCP"/>
+                        <segue destination="pWR-OW-LPV" kind="relationship" relationship="viewControllers" id="UKD-U3-iwA"/>
+                        <segue destination="DK5-J9-yBo" kind="relationship" relationship="viewControllers" id="Xl5-my-lbH"/>
+                        <segue destination="aSg-pO-BYj" kind="relationship" relationship="viewControllers" id="0U9-ug-WrD"/>
+                        <segue destination="DOr-hT-bPz" kind="relationship" relationship="viewControllers" id="g9f-rk-xJ0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EO6-Q6-H3J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-534" y="-550"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

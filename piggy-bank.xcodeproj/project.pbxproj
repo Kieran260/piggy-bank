@@ -7,25 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		51A15CF82A22795C00129AFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A15CF72A22795C00129AFF /* AppDelegate.swift */; };
 		51A15CFA2A22795C00129AFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A15CF92A22795C00129AFF /* SceneDelegate.swift */; };
-		51A15CFC2A22795C00129AFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A15CFB2A22795C00129AFF /* ViewController.swift */; };
 		51A15CFF2A22795C00129AFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51A15CFD2A22795C00129AFF /* Main.storyboard */; };
 		51A15D022A22795C00129AFF /* piggy_bank.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 51A15D002A22795C00129AFF /* piggy_bank.xcdatamodeld */; };
 		51A15D042A22795F00129AFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51A15D032A22795F00129AFF /* Assets.xcassets */; };
 		51A15D072A22795F00129AFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51A15D052A22795F00129AFF /* LaunchScreen.storyboard */; };
+		51A15D122A22872A00129AFF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A15D112A22872A00129AFF /* TabBarController.swift */; };
+		51A15D142A22873B00129AFF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A15D132A22873B00129AFF /* HomeViewController.swift */; };
+		51A15D162A2287FD00129AFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A15D152A2287FD00129AFF /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		51A15CF42A22795C00129AFF /* piggy-bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "piggy-bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		51A15CF72A22795C00129AFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51A15CF92A22795C00129AFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		51A15CFB2A22795C00129AFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		51A15CFE2A22795C00129AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51A15D012A22795C00129AFF /* piggy_bank.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = piggy_bank.xcdatamodel; sourceTree = "<group>"; };
 		51A15D032A22795F00129AFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51A15D062A22795F00129AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51A15D082A22795F00129AFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51A15D112A22872A00129AFF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		51A15D132A22873B00129AFF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		51A15D152A2287FD00129AFF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,25 @@
 		51A15CF62A22795C00129AFF /* piggy-bank */ = {
 			isa = PBXGroup;
 			children = (
-				51A15CF72A22795C00129AFF /* AppDelegate.swift */,
+				51A15D0E2A2286D000129AFF /* ViewControllers */,
 				51A15CF92A22795C00129AFF /* SceneDelegate.swift */,
-				51A15CFB2A22795C00129AFF /* ViewController.swift */,
 				51A15CFD2A22795C00129AFF /* Main.storyboard */,
 				51A15D032A22795F00129AFF /* Assets.xcassets */,
 				51A15D052A22795F00129AFF /* LaunchScreen.storyboard */,
 				51A15D082A22795F00129AFF /* Info.plist */,
 				51A15D002A22795C00129AFF /* piggy_bank.xcdatamodeld */,
+				51A15D152A2287FD00129AFF /* AppDelegate.swift */,
 			);
 			path = "piggy-bank";
+			sourceTree = "<group>";
+		};
+		51A15D0E2A2286D000129AFF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				51A15D112A22872A00129AFF /* TabBarController.swift */,
+				51A15D132A22873B00129AFF /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51A15CFC2A22795C00129AFF /* ViewController.swift in Sources */,
-				51A15CF82A22795C00129AFF /* AppDelegate.swift in Sources */,
+				51A15D122A22872A00129AFF /* TabBarController.swift in Sources */,
 				51A15D022A22795C00129AFF /* piggy_bank.xcdatamodeld in Sources */,
 				51A15CFA2A22795C00129AFF /* SceneDelegate.swift in Sources */,
+				51A15D162A2287FD00129AFF /* AppDelegate.swift in Sources */,
+				51A15D142A22873B00129AFF /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
