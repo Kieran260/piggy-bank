@@ -15,6 +15,8 @@
 		51A15D122A22872A00129AFF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A15D112A22872A00129AFF /* TabBarController.swift */; };
 		51A15D142A22873B00129AFF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A15D132A22873B00129AFF /* HomeViewController.swift */; };
 		51A15D162A2287FD00129AFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A15D152A2287FD00129AFF /* AppDelegate.swift */; };
+		51A15D192A2292FF00129AFF /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A15D172A2292FF00129AFF /* CardTableViewCell.swift */; };
+		51A15D1A2A2292FF00129AFF /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A15D182A2292FF00129AFF /* CardTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		51A15D112A22872A00129AFF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		51A15D132A22873B00129AFF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		51A15D152A2287FD00129AFF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		51A15D172A2292FF00129AFF /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		51A15D182A2292FF00129AFF /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +80,19 @@
 			isa = PBXGroup;
 			children = (
 				51A15D112A22872A00129AFF /* TabBarController.swift */,
-				51A15D132A22873B00129AFF /* HomeViewController.swift */,
+				51A15D1B2A22931300129AFF /* Home */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		51A15D1B2A22931300129AFF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				51A15D132A22873B00129AFF /* HomeViewController.swift */,
+				51A15D172A2292FF00129AFF /* CardTableViewCell.swift */,
+				51A15D182A2292FF00129AFF /* CardTableViewCell.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +156,7 @@
 				51A15D072A22795F00129AFF /* LaunchScreen.storyboard in Resources */,
 				51A15D042A22795F00129AFF /* Assets.xcassets in Resources */,
 				51A15CFF2A22795C00129AFF /* Main.storyboard in Resources */,
+				51A15D1A2A2292FF00129AFF /* CardTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51A15D122A22872A00129AFF /* TabBarController.swift in Sources */,
+				51A15D192A2292FF00129AFF /* CardTableViewCell.swift in Sources */,
 				51A15D022A22795C00129AFF /* piggy_bank.xcdatamodeld in Sources */,
 				51A15CFA2A22795C00129AFF /* SceneDelegate.swift in Sources */,
 				51A15D162A2287FD00129AFF /* AppDelegate.swift in Sources */,

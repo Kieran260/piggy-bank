@@ -17,8 +17,6 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
-
         // Set selected tab bar item color
         let hexColor = UIColor(rgb: 0x00FFB3)
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: hexColor], for: .selected)
@@ -35,20 +33,9 @@ class TabBarController: UITabBarController {
         backgroundImage.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
         // Insert the UIImageView at the bottom of the view hierarchy
-        self.view.insertSubview(backgroundImage, at: 1)
+        self.view.insertSubview(backgroundImage, at: 0)
 
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
