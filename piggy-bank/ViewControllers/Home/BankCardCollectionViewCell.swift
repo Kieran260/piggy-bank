@@ -25,13 +25,14 @@ class BankCardCollectionViewCell: UICollectionViewCell {
         card = UIView()
         card.translatesAutoresizingMaskIntoConstraints = false
         card.backgroundColor = .systemOrange
+        card.layer.cornerRadius = 10
         contentView.addSubview(card)
         
         NSLayoutConstraint.activate([
             card.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
             card.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            card.widthAnchor.constraint(equalToConstant: 300),
-            card.heightAnchor.constraint(equalToConstant: 200),
+            card.widthAnchor.constraint(equalToConstant: 225),
+            card.heightAnchor.constraint(equalToConstant: 150),
         ])
     }
     
