@@ -26,17 +26,27 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="m4G-vq-BAb">
-                                <rect key="frame" x="0.0" y="31.666666666666654" width="335" height="268.33333333333337"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="K9x-Rq-eRI">
+                                <rect key="frame" x="0.0" y="31.666666666666657" width="335" height="200"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ghx-0R-clU">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="76J-Yg-vqP"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9Mh-Sw-MaG">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                             </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="RZd-Ic-hfC">
+                                <rect key="frame" x="0.0" y="241.66666666666666" width="335" height="58.333333333333343"/>
+                            </pageControl>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="K9x-Rq-eRI" firstAttribute="leading" secondItem="xH5-9x-xGd" secondAttribute="leading" id="KZc-84-5kD"/>
+                            <constraint firstAttribute="trailing" secondItem="K9x-Rq-eRI" secondAttribute="trailing" id="psj-Mo-WgF"/>
+                        </constraints>
                     </stackView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -49,6 +59,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="collectionView" destination="K9x-Rq-eRI" id="Bfo-No-quF"/>
+            </connections>
             <point key="canvasLocation" x="154.96183206106869" y="109.1549295774648"/>
         </tableViewCell>
     </objects>

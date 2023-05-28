@@ -19,8 +19,9 @@
 		51A15D1A2A2292FF00129AFF /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A15D182A2292FF00129AFF /* CardTableViewCell.xib */; };
 		51A15D1D2A229BC700129AFF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A15D1C2A229BC700129AFF /* BaseViewController.swift */; };
 		51A15D202A229C4F00129AFF /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A15D1F2A229C4F00129AFF /* WalletViewController.swift */; };
-		51A15D232A22A42000129AFF /* BankCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A15D212A22A42000129AFF /* BankCardCollectionViewCell.swift */; };
-		51A15D242A22A42000129AFF /* BankCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A15D222A22A42000129AFF /* BankCardCollectionViewCell.xib */; };
+		51A15D272A22A7E700129AFF /* BankCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A15D252A22A7E700129AFF /* BankCardCollectionViewCell.swift */; };
+		51A15D282A22A7E700129AFF /* BankCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A15D262A22A7E700129AFF /* BankCardCollectionViewCell.xib */; };
+		51A15D302A23669D00129AFF /* CollectionViewPagingLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 51A15D2F2A23669D00129AFF /* CollectionViewPagingLayout */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +39,8 @@
 		51A15D182A2292FF00129AFF /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
 		51A15D1C2A229BC700129AFF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		51A15D1F2A229C4F00129AFF /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
-		51A15D212A22A42000129AFF /* BankCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCardCollectionViewCell.swift; sourceTree = "<group>"; };
-		51A15D222A22A42000129AFF /* BankCardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankCardCollectionViewCell.xib; sourceTree = "<group>"; };
+		51A15D252A22A7E700129AFF /* BankCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		51A15D262A22A7E700129AFF /* BankCardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankCardCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51A15D302A23669D00129AFF /* CollectionViewPagingLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,8 +58,10 @@
 		51A15CEB2A22795C00129AFF = {
 			isa = PBXGroup;
 			children = (
+				51A15D2B2A23643300129AFF /* Packages */,
 				51A15CF62A22795C00129AFF /* piggy-bank */,
 				51A15CF52A22795C00129AFF /* Products */,
+				51A15D2E2A23669D00129AFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +105,8 @@
 				51A15D132A22873B00129AFF /* HomeViewController.swift */,
 				51A15D172A2292FF00129AFF /* CardTableViewCell.swift */,
 				51A15D182A2292FF00129AFF /* CardTableViewCell.xib */,
-				51A15D212A22A42000129AFF /* BankCardCollectionViewCell.swift */,
-				51A15D222A22A42000129AFF /* BankCardCollectionViewCell.xib */,
+				51A15D252A22A7E700129AFF /* BankCardCollectionViewCell.swift */,
+				51A15D262A22A7E700129AFF /* BankCardCollectionViewCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -113,6 +117,20 @@
 				51A15D1F2A229C4F00129AFF /* WalletViewController.swift */,
 			);
 			path = Wallet;
+			sourceTree = "<group>";
+		};
+		51A15D2B2A23643300129AFF /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		51A15D2E2A23669D00129AFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +149,9 @@
 			dependencies = (
 			);
 			name = "piggy-bank";
+			packageProductDependencies = (
+				51A15D2F2A23669D00129AFF /* CollectionViewPagingLayout */,
+			);
 			productName = "piggy-bank";
 			productReference = 51A15CF42A22795C00129AFF /* piggy-bank.app */;
 			productType = "com.apple.product-type.application";
@@ -159,6 +180,9 @@
 				Base,
 			);
 			mainGroup = 51A15CEB2A22795C00129AFF;
+			packageReferences = (
+				51A15D2D2A2364D500129AFF /* XCRemoteSwiftPackageReference "CollectionViewPagingLayout" */,
+			);
 			productRefGroup = 51A15CF52A22795C00129AFF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -173,7 +197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51A15D242A22A42000129AFF /* BankCardCollectionViewCell.xib in Resources */,
+				51A15D282A22A7E700129AFF /* BankCardCollectionViewCell.xib in Resources */,
 				51A15D072A22795F00129AFF /* LaunchScreen.storyboard in Resources */,
 				51A15D042A22795F00129AFF /* Assets.xcassets in Resources */,
 				51A15CFF2A22795C00129AFF /* Main.storyboard in Resources */,
@@ -189,7 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51A15D122A22872A00129AFF /* TabBarController.swift in Sources */,
-				51A15D232A22A42000129AFF /* BankCardCollectionViewCell.swift in Sources */,
+				51A15D272A22A7E700129AFF /* BankCardCollectionViewCell.swift in Sources */,
 				51A15D192A2292FF00129AFF /* CardTableViewCell.swift in Sources */,
 				51A15D022A22795C00129AFF /* piggy_bank.xcdatamodeld in Sources */,
 				51A15CFA2A22795C00129AFF /* SceneDelegate.swift in Sources */,
@@ -414,6 +438,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		51A15D2D2A2364D500129AFF /* XCRemoteSwiftPackageReference "CollectionViewPagingLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/amirdew/CollectionViewPagingLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		51A15D2F2A23669D00129AFF /* CollectionViewPagingLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51A15D2D2A2364D500129AFF /* XCRemoteSwiftPackageReference "CollectionViewPagingLayout" */;
+			productName = CollectionViewPagingLayout;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		51A15D002A22795C00129AFF /* piggy_bank.xcdatamodeld */ = {
