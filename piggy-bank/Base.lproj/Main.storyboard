@@ -46,7 +46,7 @@
                                 </constraints>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="caO-g6-UCr">
-                                <rect key="frame" x="20" y="110" width="335" height="619"/>
+                                <rect key="frame" x="0.0" y="110" width="375" height="619"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="0.12941176469999999" green="0.1450980392" blue="0.16078431369999999" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
@@ -59,8 +59,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="1MD-Gh-TOb" firstAttribute="top" secondItem="oRf-5S-agK" secondAttribute="top" id="A4b-6B-eKh"/>
-                            <constraint firstItem="oRf-5S-agK" firstAttribute="trailing" secondItem="caO-g6-UCr" secondAttribute="trailing" constant="20" id="ARV-Ve-EWj"/>
-                            <constraint firstItem="caO-g6-UCr" firstAttribute="leading" secondItem="oRf-5S-agK" secondAttribute="leading" constant="20" id="Qvu-HH-FBQ"/>
+                            <constraint firstItem="oRf-5S-agK" firstAttribute="trailing" secondItem="caO-g6-UCr" secondAttribute="trailing" id="ARV-Ve-EWj"/>
+                            <constraint firstItem="caO-g6-UCr" firstAttribute="leading" secondItem="oRf-5S-agK" secondAttribute="leading" id="Qvu-HH-FBQ"/>
                             <constraint firstItem="caO-g6-UCr" firstAttribute="top" secondItem="1MD-Gh-TOb" secondAttribute="bottom" constant="10" id="eIj-et-19j"/>
                             <constraint firstItem="caO-g6-UCr" firstAttribute="bottom" secondItem="oRf-5S-agK" secondAttribute="bottom" id="eMM-Mt-0JH"/>
                             <constraint firstItem="1MD-Gh-TOb" firstAttribute="leading" secondItem="oRf-5S-agK" secondAttribute="leading" constant="20" id="q8b-NR-Gib"/>

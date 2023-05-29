@@ -10,30 +10,36 @@ import UIKit
 class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     
     // MARK: Table
-    
+
     @IBOutlet weak var table: UITableView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell:CardTableViewCell = tableView.dequeueReusableCell(withIdentifier: "CardTableViewCell", for: indexPath) as! CardTableViewCell
-
-        cell.selectionStyle = .none
-        return cell
-    
-        
-
-        
+        switch (indexPath.row) {
+        case 0:
+            let cell:CardTableViewCell = tableView.dequeueReusableCell(withIdentifier: "CardTableViewCell", for: indexPath) as! CardTableViewCell
+            cell.selectionStyle = .none
+            return cell
+        case 1:
+            let cell:AccountsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "AccountsTableViewCell", for: indexPath) as! AccountsTableViewCell
+            return cell
+        default:
+            let cell:CardTableViewCell = tableView.dequeueReusableCell(withIdentifier: "CardTableViewCell", for: indexPath) as! CardTableViewCell
+            cell.selectionStyle = .none
+            return cell
+            
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == 0 {
+        switch (indexPath.row) {
+        case 0:
+            return 250
+        default:
             return 300
-        } else {
-            return 150 // Return the height for all other cells
         }
     }
 
@@ -43,11 +49,9 @@ class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
 
 
+        // Register nibs
         self.table.register(UINib.init(nibName: "CardTableViewCell", bundle: .main), forCellReuseIdentifier: "CardTableViewCell")
-        
-
-
- 
+        self.table.register(UINib.init(nibName: "AccountsTableViewCell", bundle: .main), forCellReuseIdentifier: "AccountsTableViewCell")
     }
     
 

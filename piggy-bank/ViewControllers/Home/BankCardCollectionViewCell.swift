@@ -31,8 +31,8 @@ class BankCardCollectionViewCell: UICollectionViewCell {
         NSLayoutConstraint.activate([
             card.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
             card.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            card.widthAnchor.constraint(equalToConstant: 225),
-            card.heightAnchor.constraint(equalToConstant: 150),
+            card.widthAnchor.constraint(equalToConstant: 270),
+            card.heightAnchor.constraint(equalToConstant: 180),
         ])
     }
     

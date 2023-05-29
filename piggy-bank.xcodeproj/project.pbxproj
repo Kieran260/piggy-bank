@@ -22,6 +22,8 @@
 		51A15D272A22A7E700129AFF /* BankCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A15D252A22A7E700129AFF /* BankCardCollectionViewCell.swift */; };
 		51A15D282A22A7E700129AFF /* BankCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A15D262A22A7E700129AFF /* BankCardCollectionViewCell.xib */; };
 		51A15D302A23669D00129AFF /* CollectionViewPagingLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 51A15D2F2A23669D00129AFF /* CollectionViewPagingLayout */; };
+		51A15D332A25246400129AFF /* AccountsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A15D312A25246400129AFF /* AccountsTableViewCell.swift */; };
+		51A15D342A25246400129AFF /* AccountsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A15D322A25246400129AFF /* AccountsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		51A15D1F2A229C4F00129AFF /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		51A15D252A22A7E700129AFF /* BankCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		51A15D262A22A7E700129AFF /* BankCardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankCardCollectionViewCell.xib; sourceTree = "<group>"; };
+		51A15D312A25246400129AFF /* AccountsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsTableViewCell.swift; sourceTree = "<group>"; };
+		51A15D322A25246400129AFF /* AccountsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 				51A15D182A2292FF00129AFF /* CardTableViewCell.xib */,
 				51A15D252A22A7E700129AFF /* BankCardCollectionViewCell.swift */,
 				51A15D262A22A7E700129AFF /* BankCardCollectionViewCell.xib */,
+				51A15D312A25246400129AFF /* AccountsTableViewCell.swift */,
+				51A15D322A25246400129AFF /* AccountsTableViewCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -198,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51A15D282A22A7E700129AFF /* BankCardCollectionViewCell.xib in Resources */,
+				51A15D342A25246400129AFF /* AccountsTableViewCell.xib in Resources */,
 				51A15D072A22795F00129AFF /* LaunchScreen.storyboard in Resources */,
 				51A15D042A22795F00129AFF /* Assets.xcassets in Resources */,
 				51A15CFF2A22795C00129AFF /* Main.storyboard in Resources */,
@@ -221,6 +228,7 @@
 				51A15D202A229C4F00129AFF /* WalletViewController.swift in Sources */,
 				51A15D1D2A229BC700129AFF /* BaseViewController.swift in Sources */,
 				51A15D142A22873B00129AFF /* HomeViewController.swift in Sources */,
+				51A15D332A25246400129AFF /* AccountsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
