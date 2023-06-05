@@ -20,6 +20,7 @@ class CardTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollection
     override func awakeFromNib() {
         super.awakeFromNib()
 
+        
         configureCollectionView()
     }
 
@@ -35,6 +36,11 @@ class CardTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollection
         collectionView.clipsToBounds = false
         collectionView.backgroundColor = .clear
         collectionView.scrollsToTop = false
+        
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            collectionView.heightAnchor.constraint(equalToConstant: 250)
+        ])
     }
     
     // MARK: Collection View

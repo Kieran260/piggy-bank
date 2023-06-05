@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5159A7FF2A2E6E6200749B30 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5159A7FE2A2E6E6200749B30 /* Theme.swift */; };
 		51A15CFA2A22795C00129AFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A15CF92A22795C00129AFF /* SceneDelegate.swift */; };
 		51A15CFF2A22795C00129AFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51A15CFD2A22795C00129AFF /* Main.storyboard */; };
 		51A15D022A22795C00129AFF /* piggy_bank.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 51A15D002A22795C00129AFF /* piggy_bank.xcdatamodeld */; };
@@ -23,10 +24,10 @@
 		51A15D282A22A7E700129AFF /* BankCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A15D262A22A7E700129AFF /* BankCardCollectionViewCell.xib */; };
 		51A15D302A23669D00129AFF /* CollectionViewPagingLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 51A15D2F2A23669D00129AFF /* CollectionViewPagingLayout */; };
 		51A15D332A25246400129AFF /* AccountsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A15D312A25246400129AFF /* AccountsTableViewCell.swift */; };
-		51A15D342A25246400129AFF /* AccountsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A15D322A25246400129AFF /* AccountsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5159A7FE2A2E6E6200749B30 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		51A15CF42A22795C00129AFF /* piggy-bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "piggy-bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A15CF92A22795C00129AFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		51A15CFE2A22795C00129AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,7 +45,6 @@
 		51A15D252A22A7E700129AFF /* BankCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		51A15D262A22A7E700129AFF /* BankCardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankCardCollectionViewCell.xib; sourceTree = "<group>"; };
 		51A15D312A25246400129AFF /* AccountsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsTableViewCell.swift; sourceTree = "<group>"; };
-		51A15D322A25246400129AFF /* AccountsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +88,7 @@
 				51A15D082A22795F00129AFF /* Info.plist */,
 				51A15D002A22795C00129AFF /* piggy_bank.xcdatamodeld */,
 				51A15D152A2287FD00129AFF /* AppDelegate.swift */,
+				5159A7FE2A2E6E6200749B30 /* Theme.swift */,
 			);
 			path = "piggy-bank";
 			sourceTree = "<group>";
@@ -112,7 +113,6 @@
 				51A15D252A22A7E700129AFF /* BankCardCollectionViewCell.swift */,
 				51A15D262A22A7E700129AFF /* BankCardCollectionViewCell.xib */,
 				51A15D312A25246400129AFF /* AccountsTableViewCell.swift */,
-				51A15D322A25246400129AFF /* AccountsTableViewCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -204,7 +204,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				51A15D282A22A7E700129AFF /* BankCardCollectionViewCell.xib in Resources */,
-				51A15D342A25246400129AFF /* AccountsTableViewCell.xib in Resources */,
 				51A15D072A22795F00129AFF /* LaunchScreen.storyboard in Resources */,
 				51A15D042A22795F00129AFF /* Assets.xcassets in Resources */,
 				51A15CFF2A22795C00129AFF /* Main.storyboard in Resources */,
@@ -223,6 +222,7 @@
 				51A15D272A22A7E700129AFF /* BankCardCollectionViewCell.swift in Sources */,
 				51A15D192A2292FF00129AFF /* CardTableViewCell.swift in Sources */,
 				51A15D022A22795C00129AFF /* piggy_bank.xcdatamodeld in Sources */,
+				5159A7FF2A2E6E6200749B30 /* Theme.swift in Sources */,
 				51A15CFA2A22795C00129AFF /* SceneDelegate.swift in Sources */,
 				51A15D162A2287FD00129AFF /* AppDelegate.swift in Sources */,
 				51A15D202A229C4F00129AFF /* WalletViewController.swift in Sources */,

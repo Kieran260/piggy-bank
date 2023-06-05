@@ -18,40 +18,29 @@ class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         switch (indexPath.row) {
-        case 0:
-            let cell:CardTableViewCell = tableView.dequeueReusableCell(withIdentifier: "CardTableViewCell", for: indexPath) as! CardTableViewCell
-            cell.selectionStyle = .none
-            return cell
         case 1:
             let cell:AccountsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "AccountsTableViewCell", for: indexPath) as! AccountsTableViewCell
+            cell.selectionStyle = .none
             return cell
         default:
             let cell:CardTableViewCell = tableView.dequeueReusableCell(withIdentifier: "CardTableViewCell", for: indexPath) as! CardTableViewCell
             cell.selectionStyle = .none
             return cell
-            
         }
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        switch (indexPath.row) {
-        case 0:
-            return 250
-        default:
-            return 300
-        }
-    }
+
 
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
         // Register nibs
         self.table.register(UINib.init(nibName: "CardTableViewCell", bundle: .main), forCellReuseIdentifier: "CardTableViewCell")
-        self.table.register(UINib.init(nibName: "AccountsTableViewCell", bundle: .main), forCellReuseIdentifier: "AccountsTableViewCell")
+        self.table.register(AccountsTableViewCell.self, forCellReuseIdentifier: "AccountsTableViewCell")
     }
     
 

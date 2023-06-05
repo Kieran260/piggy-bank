@@ -14,11 +14,15 @@ class TabBarController: UITabBarController {
     var tabBarImage: UIImageView!
     var gradientView: UIImageView!
 
+    @IBOutlet weak var mainTabBar: UITabBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        mainTabBar.backgroundColor = DarkTheme.backgroundColor
+        
         // Set selected tab bar item color
-        let hexColor = UIColor(rgb: 0x00FFB3)
+        let hexColor = DarkTheme.primaryColor
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: hexColor], for: .selected)
     
 
@@ -61,23 +65,7 @@ class TabBarController: UITabBarController {
 
 }
 
-extension UIColor {
-    convenience init(red: Int, green: Int, blue: Int) {
-        assert(red >= 0 && red <= 255, "Invalid red component")
-        assert(green >= 0 && green <= 255, "Invalid green component")
-        assert(blue >= 0 && blue <= 255, "Invalid blue component")
 
-        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
-    }
-
-    convenience init(rgb: Int) {
-        self.init(
-            red: (rgb >> 16) & 0xFF,
-            green: (rgb >> 8) & 0xFF,
-            blue: rgb & 0xFF
-        )
-    }
-}
 
 extension UIImage {
     func resizeImage(targetSize: CGSize) -> UIImage {
