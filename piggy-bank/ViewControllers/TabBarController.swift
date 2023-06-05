@@ -10,9 +10,9 @@ import UIKit
 
 
 class TabBarController: UITabBarController {
+    
     var tabBarImage: UIImageView!
     var gradientView: UIImageView!
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +54,9 @@ class TabBarController: UITabBarController {
         
         self.tabBar.unselectedItemTintColor = UIColor.white.withAlphaComponent(0.5)
 
+        let tabBarTopBorder = UIView(frame: CGRect(x: 0, y: 0, width: tabBar.frame.width, height: 0.5))
+        tabBarTopBorder.backgroundColor = UIColor.gray
+        tabBar.addSubview(tabBarTopBorder)
     }
 
 }

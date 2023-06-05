@@ -9,22 +9,28 @@ import UIKit
 
 class BankCardCollectionViewCell: UICollectionViewCell {
     
+    // MARK: Declarations
+    
     var card: UIView!
+    var cardBackground: UIImageView!
+    
+    // MARK: Set Up Cell
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setup()
+        setupCard()
+        setupBackground()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setup()
+        setupCard()
+        setupBackground()
     }
     
-    func setup() {
+    func setupCard() {
         card = UIView()
         card.translatesAutoresizingMaskIntoConstraints = false
-        card.backgroundColor = .systemOrange
         card.layer.cornerRadius = 10
         contentView.addSubview(card)
         
@@ -33,6 +39,23 @@ class BankCardCollectionViewCell: UICollectionViewCell {
             card.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
             card.widthAnchor.constraint(equalToConstant: 270),
             card.heightAnchor.constraint(equalToConstant: 180),
+        ])
+    }
+    
+    func setupBackground() {
+        cardBackground = UIImageView()
+        cardBackground.contentMode = .scaleAspectFill
+        cardBackground.clipsToBounds = true
+        cardBackground.layer.cornerRadius = 10
+        cardBackground.translatesAutoresizingMaskIntoConstraints = false
+        
+        card.addSubview(cardBackground)
+        
+        NSLayoutConstraint.activate([
+            cardBackground.topAnchor.constraint(equalTo: card.topAnchor),
+            cardBackground.bottomAnchor.constraint(equalTo: card.bottomAnchor),
+            cardBackground.leadingAnchor.constraint(equalTo: card.leadingAnchor),
+            cardBackground.trailingAnchor.constraint(equalTo: card.trailingAnchor),
         ])
     }
     

@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,19 +17,36 @@
                 <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hol-SX-ZGR">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hol-SX-ZGR">
                         <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pyv-yE-y1j">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pyv-yE-y1j" firstAttribute="top" secondItem="hol-SX-ZGR" secondAttribute="top" id="CzT-LE-f2X"/>
+                            <constraint firstAttribute="trailing" secondItem="Pyv-yE-y1j" secondAttribute="trailing" id="HmW-I2-EEm"/>
+                            <constraint firstItem="Pyv-yE-y1j" firstAttribute="leading" secondItem="hol-SX-ZGR" secondAttribute="leading" id="lz4-Rw-lCm"/>
+                            <constraint firstAttribute="bottom" secondItem="Pyv-yE-y1j" secondAttribute="bottom" id="nGx-XO-0c9"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="hol-SX-ZGR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5Xw-1P-dhO"/>
+                <constraint firstAttribute="bottom" secondItem="hol-SX-ZGR" secondAttribute="bottom" id="9yo-pq-2pv"/>
+                <constraint firstAttribute="trailing" secondItem="hol-SX-ZGR" secondAttribute="trailing" id="UmO-jO-kHl"/>
+                <constraint firstItem="hol-SX-ZGR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Zkz-Fj-uyN"/>
+            </constraints>
             <size key="customSize" width="474" height="50"/>
             <connections>
                 <outlet property="card" destination="hol-SX-ZGR" id="G0H-Zd-ND2"/>
+                <outlet property="cardBackground" destination="Pyv-yE-y1j" id="YQG-ma-kTR"/>
             </connections>
-            <point key="canvasLocation" x="228.24427480916029" y="20.422535211267608"/>
+            <point key="canvasLocation" x="227.48091603053433" y="20.422535211267608"/>
         </collectionViewCell>
     </objects>
     <resources>

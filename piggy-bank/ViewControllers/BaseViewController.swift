@@ -13,11 +13,16 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
 
         let backgroundImage = UIImageView(frame: self.view.bounds)
-        backgroundImage.image = UIImage(named: "background")
+        //backgroundImage.image = UIImage(named: "background")
+        
+        let hexColor = UIColor(rgb: 0x212529)
+
+        backgroundImage.backgroundColor = hexColor
         backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
         backgroundImage.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 
         self.view.insertSubview(backgroundImage, at: 0)
     }
 }
+
 

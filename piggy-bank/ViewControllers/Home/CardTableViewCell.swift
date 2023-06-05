@@ -10,9 +10,13 @@ import CollectionViewPagingLayout
 
 class CardTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    // MARK: Declarations
+    
     @IBOutlet weak var collectionView: UICollectionView!
     private let layout = CollectionViewPagingLayout()
 
+    // MARK: Config
+    
     override func awakeFromNib() {
         super.awakeFromNib()
 
@@ -33,6 +37,8 @@ class CardTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollection
         collectionView.scrollsToTop = false
     }
     
+    // MARK: Collection View
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3
     }
@@ -40,6 +46,8 @@ class CardTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollection
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BankCardCell", for: indexPath) as! BankCardCollectionViewCell
         
+        cell.cardBackground.image = UIImage(named: "card-purple")
+
         return cell
     }
 
