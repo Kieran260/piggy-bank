@@ -8,6 +8,7 @@ class AccountsTableViewCell: UITableViewCell, UITableViewDelegate, UITableViewDa
     var table: UITableView!
     var stackView: UIStackView!
     var label: UILabel!
+    var button: UIButton!
     
     // For dynamic table view height
     var tableHeightConstraint: NSLayoutConstraint?
@@ -57,6 +58,7 @@ class AccountsTableViewCell: UITableViewCell, UITableViewDelegate, UITableViewDa
         table.layer.cornerRadius = 10
     }
 
+    // MARK: Stack View
     func configStackView() {
         // Setup stack view
         stackView = UIStackView()
@@ -67,11 +69,44 @@ class AccountsTableViewCell: UITableViewCell, UITableViewDelegate, UITableViewDa
         stackView.translatesAutoresizingMaskIntoConstraints = false
         self.contentView.addSubview(stackView)
 
+        // MARK: Accounts Label
+        
         // Setup label within the stack view
         label = UILabel()
         label.text = "Accounts"
         label.textColor = .white
         stackView.addArrangedSubview(label)
+        
+        // MARK: Add Button
+        
+        // Create a button
+        let button = UIButton()
+
+        // Create a button configuration
+        var configuration = UIButton.Configuration.filled()
+
+        // Configure the button title
+        configuration.title = "New"
+        configuration.buttonSize = .small
+
+
+        // Configure button background color
+        configuration.baseBackgroundColor = DarkTheme.greyButtonColor
+
+        // Configure the button padding
+        configuration.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 15, bottom: 10, trailing: 15)
+
+        // Apply the configuration to the button
+        button.configuration = configuration
+
+        // Add button to stackView
+        stackView.addArrangedSubview(button)
+
+
+
+        // Create a dummy view to push the button to the trailing edge of the stack view
+        let dummyView = UIView()
+        stackView.insertArrangedSubview(dummyView, at: 1)
         
         // Constraints
         NSLayoutConstraint.activate([
