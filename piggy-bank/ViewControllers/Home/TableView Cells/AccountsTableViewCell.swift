@@ -12,18 +12,20 @@ class AccountsTableViewCell: UITableViewCell, UITableViewDelegate, UITableViewDa
     
     // For dynamic table view height
     var tableHeightConstraint: NSLayoutConstraint?
-    let rowHeight: CGFloat = 44  // Set to row height
+    let rowHeight: CGFloat = 70  // Set to row height
     
     // MARK: Table View
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "Single Cell"
-        cell.backgroundColor = .clear
-        cell.textLabel?.textColor = .white
+        let cell = tableView.dequeueReusableCell(withIdentifier: "accountCell", for: indexPath) as! AccountCell
+
         return cell
     }
     
@@ -50,15 +52,18 @@ class AccountsTableViewCell: UITableViewCell, UITableViewDelegate, UITableViewDa
         // Configure table view
         table.dataSource = self
         table.delegate = self
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        table.register(UITableViewCell.self, forCellReuseIdentifier: "accountCell")
         table.rowHeight = rowHeight
         table.estimatedRowHeight = rowHeight
         table.backgroundColor = DarkTheme.containerColor
+
+        
         table.separatorColor = .clear
         table.layer.cornerRadius = 10
     }
 
-    // MARK: Stack View
+
+    // MARK: Stack View - Contains 'accounts' header and new button
     func configStackView() {
         // Setup stack view
         stackView = UIStackView()
@@ -103,7 +108,6 @@ class AccountsTableViewCell: UITableViewCell, UITableViewDelegate, UITableViewDa
         stackView.addArrangedSubview(button)
 
 
-
         // Create a dummy view to push the button to the trailing edge of the stack view
         let dummyView = UIView()
         stackView.insertArrangedSubview(dummyView, at: 1)
@@ -116,13 +120,16 @@ class AccountsTableViewCell: UITableViewCell, UITableViewDelegate, UITableViewDa
         ])
     }
 
-    // MARK: Setup
+    // MARK: Initialisation
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
       
         self.backgroundColor = .clear
         configStackView()
         configTable()
+        
+        table.register(AccountCell.self, forCellReuseIdentifier: "accountCell")
     }
     
     required init?(coder: NSCoder) {

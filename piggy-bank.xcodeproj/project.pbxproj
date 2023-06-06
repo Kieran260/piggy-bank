@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5159A7FF2A2E6E6200749B30 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5159A7FE2A2E6E6200749B30 /* Theme.swift */; };
+		5159A8022A2F5C5300749B30 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5159A8012A2F5C5300749B30 /* AccountCell.swift */; };
 		51A15CFA2A22795C00129AFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A15CF92A22795C00129AFF /* SceneDelegate.swift */; };
 		51A15CFF2A22795C00129AFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51A15CFD2A22795C00129AFF /* Main.storyboard */; };
 		51A15D022A22795C00129AFF /* piggy_bank.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 51A15D002A22795C00129AFF /* piggy_bank.xcdatamodeld */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		5159A7FE2A2E6E6200749B30 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		5159A8012A2F5C5300749B30 /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "\U0010AccountCell.swift"; sourceTree = "<group>"; };
 		51A15CF42A22795C00129AFF /* piggy-bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "piggy-bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A15CF92A22795C00129AFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		51A15CFE2A22795C00129AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +61,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5159A8002A2F5A3A00749B30 /* TableView Cells */ = {
+			isa = PBXGroup;
+			children = (
+				51A15D172A2292FF00129AFF /* CardTableViewCell.swift */,
+				51A15D182A2292FF00129AFF /* CardTableViewCell.xib */,
+				51A15D252A22A7E700129AFF /* BankCardCollectionViewCell.swift */,
+				51A15D262A22A7E700129AFF /* BankCardCollectionViewCell.xib */,
+				51A15D312A25246400129AFF /* AccountsTableViewCell.swift */,
+				5159A8012A2F5C5300749B30 /* AccountCell.swift */,
+			);
+			path = "\U0010TableView Cells";
+			sourceTree = "<group>";
+		};
 		51A15CEB2A22795C00129AFF = {
 			isa = PBXGroup;
 			children = (
@@ -108,11 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				51A15D132A22873B00129AFF /* HomeViewController.swift */,
-				51A15D172A2292FF00129AFF /* CardTableViewCell.swift */,
-				51A15D182A2292FF00129AFF /* CardTableViewCell.xib */,
-				51A15D252A22A7E700129AFF /* BankCardCollectionViewCell.swift */,
-				51A15D262A22A7E700129AFF /* BankCardCollectionViewCell.xib */,
-				51A15D312A25246400129AFF /* AccountsTableViewCell.swift */,
+				5159A8002A2F5A3A00749B30 /* TableView Cells */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -228,6 +239,7 @@
 				51A15D202A229C4F00129AFF /* WalletViewController.swift in Sources */,
 				51A15D1D2A229BC700129AFF /* BaseViewController.swift in Sources */,
 				51A15D142A22873B00129AFF /* HomeViewController.swift in Sources */,
+				5159A8022A2F5C5300749B30 /* AccountCell.swift in Sources */,
 				51A15D332A25246400129AFF /* AccountsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,7 +9,7 @@ import UIKit
 
 class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     
-    // MARK: Table
+    // MARK: Main TableView
 
     @IBOutlet weak var table: UITableView!
     
@@ -32,13 +32,12 @@ class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     }
     
 
-
-    
+    // MARK: Initialisation
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Register nibs
+        // Register
         self.table.register(UINib.init(nibName: "CardTableViewCell", bundle: .main), forCellReuseIdentifier: "CardTableViewCell")
         self.table.register(AccountsTableViewCell.self, forCellReuseIdentifier: "AccountsTableViewCell")
     }

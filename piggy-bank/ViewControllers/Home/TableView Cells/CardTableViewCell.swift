@@ -15,15 +15,21 @@ class CardTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollection
     @IBOutlet weak var collectionView: UICollectionView!
     private let layout = CollectionViewPagingLayout()
 
-    // MARK: Config
+
+    // MARK: Collection View
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-
-        
-        configureCollectionView()
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
     }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BankCardCell", for: indexPath) as! BankCardCollectionViewCell
+        
+        cell.cardBackground.image = UIImage(named: "card-purple")
 
+        return cell
+    }
+    
     private func configureCollectionView() {
         collectionView.register(BankCardCollectionViewCell.self, forCellWithReuseIdentifier: "BankCardCell")
         collectionView.isPagingEnabled = true
@@ -43,20 +49,15 @@ class CardTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollection
         ])
     }
     
-    // MARK: Collection View
+    // MARK: Initialisation
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+    override func awakeFromNib() {
+        super.awakeFromNib()
+
+        configureCollectionView()
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BankCardCell", for: indexPath) as! BankCardCollectionViewCell
-        
-        cell.cardBackground.image = UIImage(named: "card-purple")
-
-        return cell
-    }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }

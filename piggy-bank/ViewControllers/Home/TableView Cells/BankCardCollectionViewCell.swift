@@ -14,7 +14,7 @@ class BankCardCollectionViewCell: UICollectionViewCell {
     var card: UIView!
     var cardBackground: UIImageView!
     
-    // MARK: Set Up Cell
+    // MARK: Initialisation
     
     override init(frame: CGRect) {
         super.init(frame: frame)
